@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F719877C-4AD7-440E-A33A-6B2F9822AB4E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FlickySlide</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>07FEAA1F-0239-4623-B32A-9878384E02AF</key>
+		<string>https://github.com/joeybronner/FlickySlide</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FlickySlide.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>07FEAA1F-0239-4623-B32A-9878384E02AF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/joeybronner/FlickySlide</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>07FEAA1F-0239-4623-B32A-9878384E02AF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>07FEAA1F-0239-4623-B32A-9878384E02AF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FlickySlide</string>
+		</dict>
+	</array>
+</dict>
+</plist>
