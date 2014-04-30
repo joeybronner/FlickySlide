@@ -37,9 +37,18 @@
     location.longitude = 7.47510120000004;
     location.radius = 5;
     
-    self.pictures = [FlickRPicture picturesAroundLocation:location];
+    UIActivityIndicatorView * indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     
-    self.readerView.delegate = self;
+    indicator.backgroundColor = [UIColor blackColor];
+    indicator.center = self.view.center;
+    [self.view addSubview:indicator];
+    [indicator startAnimating];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{self.pictures = [FlickRPicture picturesAroundLocation:location];
+        dispatch_async(dispatch_get_main_queue(), ^{self.readerView.delegate = self; [self.readerView displayPageAtIndex:0 animated:NO];
+            [indicator stopAnimating];
+        });
+    });
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -55,15 +64,25 @@
 
 -(UIView *)pageAtIndex:(int)index{
     
-    //NSString * imageName = [NSString stringWithFormat:@"%i.jpg",index];
-    //UIImage * image = [UIImage imageNamed:imageName];
-    FlickRPicture * picture = self.pictures[index];
-    NSData * imageData = [NSData dataWithContentsOfURL:picture.url];
-    
-    UIImage * image = [UIImage imageWithData:imageData];
-    UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
+    UIImageView * imageView = [[UIImageView alloc] init];
     imageView.frame = self.readerView.bounds;
     imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    
+    [[UIApplication sharedApplication]setNetworkActivityIndicatorVisible:YES];
+    self.title = @"Chargement...";
+    
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{FlickRPicture * picture = self.pictures[index];
+        NSData * imageData = [NSData dataWithContentsOfURL:picture.url];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIImage * image = [UIImage imageWithData:imageData];
+                imageView.image = image;
+                [[UIApplication sharedApplication]setNetworkActivityIndicatorVisible:NO];
+            self.title = picture.title;
+            });
+        });
+    
     return imageView;
 }
 
