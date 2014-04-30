@@ -1,17 +1,18 @@
 //
 //  PictureViewController.m
-//  welcomeBro
+//  FlickRApp
 //
-//  Created by Joey Bronner on 10/04/2014.
-//  Copyright (c) 2014 Joey Bronner. All rights reserved.
+//  Created by Joey BRONNER on 10/04/2014.
+//  Copyright (c) 2014 Joey BRONNER. All rights reserved.
 //
 
 #import "PictureViewController.h"
 #import "ReaderView.h"
 
 @interface PictureViewController () <ReaderViewDelegate>
-
 @property (weak, nonatomic) IBOutlet ReaderView *readerView;
+
+@property (strong, nonatomic) NSArray * pictures;
 
 @end
 
@@ -29,27 +30,39 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.readerView.delegate = self;
     // Do any additional setup after loading the view.
+    
+    FlickRLocation location;
+    location.latitude = 48.8787181;
+    location.longitude = 7.47510120000004;
+    location.radius = 5;
+    
+    self.pictures = [FlickRPicture picturesAroundLocation:location];
+    
+    self.readerView.delegate = self;
 }
 
--(void)viewDidAppear:(BOOL)animated
-{
+-(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [self.readerView displayPageAtIndex:0 animated:NO];
 }
 
--(int)numberOfPages
-{
-    return 3;
+
+
+- (int)numberOfPages{
+    return self.pictures.count;
 }
 
--(UIView *)pageAtIndex:(int)index
-{
-    NSString * imageName    = [NSString stringWithFormat:@"%i.jpg",index];
-    UIImage  * image        = [UIImage imageNamed:imageName];
+-(UIView *)pageAtIndex:(int)index{
+    
+    //NSString * imageName = [NSString stringWithFormat:@"%i.jpg",index];
+    //UIImage * image = [UIImage imageNamed:imageName];
+    FlickRPicture * picture = self.pictures[index];
+    NSData * imageData = [NSData dataWithContentsOfURL:picture.url];
+    
+    UIImage * image = [UIImage imageWithData:imageData];
     UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
-    imageView.frame =  self.readerView.bounds;
+    imageView.frame = self.readerView.bounds;
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     return imageView;
 }

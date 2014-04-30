@@ -29,6 +29,7 @@
 		C4F41D4318F697EC00538160 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4F41D4218F697EC00538160 /* 1.jpg */; };
 		C4F41D4718F697FF00538160 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4F41D4618F697FF00538160 /* 2.jpg */; };
 		C4F7BA6719113BD5008B911C /* flickr_api_keys in Resources */ = {isa = PBXBuildFile; fileRef = C4F7BA6619113BD5008B911C /* flickr_api_keys */; };
+		C4F7BA6A19115E64008B911C /* FlickRPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7BA6919115E64008B911C /* FlickRPicture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		C4F41D4218F697EC00538160 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		C4F41D4618F697FF00538160 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		C4F7BA6619113BD5008B911C /* flickr_api_keys */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flickr_api_keys; sourceTree = "<group>"; };
+		C4F7BA6819115E64008B911C /* FlickRPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickRPicture.h; sourceTree = "<group>"; };
+		C4F7BA6919115E64008B911C /* FlickRPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickRPicture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 		C4F41D0118F686A600538160 /* welcomeBro */ = {
 			isa = PBXGroup;
 			children = (
+				C4F7BA6819115E64008B911C /* FlickRPicture.h */,
+				C4F7BA6919115E64008B911C /* FlickRPicture.m */,
 				C4F41D0A18F686A600538160 /* jbrAppDelegate.h */,
 				C4F41D0B18F686A600538160 /* jbrAppDelegate.m */,
 				C4F41D2E18F6871A00538160 /* mainWindow.storyboard */,
@@ -282,6 +287,7 @@
 				C4F41D0F18F686A600538160 /* welcomeBro.xcdatamodeld in Sources */,
 				C4F41D3218F68EA700538160 /* PictureViewController.m in Sources */,
 				C4F41D0818F686A600538160 /* main.m in Sources */,
+				C4F7BA6A19115E64008B911C /* FlickRPicture.m in Sources */,
 				C4F41D3518F68F0900538160 /* ReaderView.m in Sources */,
 				C4F41D0C18F686A600538160 /* jbrAppDelegate.m in Sources */,
 			);
