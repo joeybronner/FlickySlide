@@ -28,6 +28,7 @@
 		C4F41D4118F697E100538160 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4F41D4018F697E100538160 /* 0.jpg */; };
 		C4F41D4318F697EC00538160 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4F41D4218F697EC00538160 /* 1.jpg */; };
 		C4F41D4718F697FF00538160 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4F41D4618F697FF00538160 /* 2.jpg */; };
+		C4F7BA6719113BD5008B911C /* flickr_api_keys in Resources */ = {isa = PBXBuildFile; fileRef = C4F7BA6619113BD5008B911C /* flickr_api_keys */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		C4F41D4018F697E100538160 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		C4F41D4218F697EC00538160 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		C4F41D4618F697FF00538160 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		C4F7BA6619113BD5008B911C /* flickr_api_keys */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flickr_api_keys; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				C4F41D1018F686A600538160 /* Images.xcassets */,
 				C4F41D0D18F686A600538160 /* welcomeBro.xcdatamodeld */,
 				C4F41D0218F686A600538160 /* Supporting Files */,
+				C4F7BA6619113BD5008B911C /* flickr_api_keys */,
 			);
 			path = welcomeBro;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F7BA6719113BD5008B911C /* flickr_api_keys in Resources */,
 				C4F41D4318F697EC00538160 /* 1.jpg in Resources */,
 				C4F41D4718F697FF00538160 /* 2.jpg in Resources */,
 				C4F41D4118F697E100538160 /* 0.jpg in Resources */,
