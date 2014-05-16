@@ -61,11 +61,64 @@
                             <outlet property="delegate" destination="43V-BA-Qmt" id="pDK-L4-hop"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="gaf-hK-cX8"/>
+                    <navigationItem key="navigationItem" id="gaf-hK-cX8">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="1rb-ak-WOo">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fXl-6A-3qQ">
+                                <rect key="frame" x="16" y="5" width="71" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="+">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7fO-Xm-8A8" kind="modal" id="QUc-GC-X1R"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SaM-aW-dj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="441" y="33"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="48b-mu-aDH">
+            <objects>
+                <viewController id="7fO-Xm-8A8" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IQQ-7q-0eL"/>
+                        <viewControllerLayoutGuide type="bottom" id="tv1-fU-wsq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zxk-AG-F8W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KT-Y4-bKW">
+                                <rect key="frame" x="107" y="470" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="Ajouter un lieu">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addLocation:" destination="7fO-Xm-8A8" eventType="touchUpInside" id="lID-JG-0Gu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tv1-fU-wsq" firstAttribute="top" secondItem="8KT-Y4-bKW" secondAttribute="bottom" constant="40" id="D4v-PG-b14"/>
+                            <constraint firstItem="8KT-Y4-bKW" firstAttribute="top" secondItem="IQQ-7q-0eL" secondAttribute="bottom" constant="465" id="eAF-iF-aTm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="zxk-AG-F8W" id="Sdd-vs-YRr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOW-hM-Qry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="-449"/>
         </scene>
         <!--Picture View Controller-->
         <scene sceneID="hht-L8-qf8">
@@ -100,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3Z-j1-kPi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="38"/>
+            <point key="canvasLocation" x="921" y="309"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -33,6 +33,7 @@
 		C4FCB75D1926089100CEA139 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB75C1926089100CEA139 /* City.m */; };
 		C4FCB7601926099100CEA139 /* City+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB75F1926099100CEA139 /* City+CRUD.m */; };
 		C4FCB7651926182E00CEA139 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB7641926182E00CEA139 /* CityViewController.m */; };
+		C4FCB768192624AA00CEA139 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB767192624AA00CEA139 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		C4FCB75F1926099100CEA139 /* City+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "City+CRUD.m"; sourceTree = "<group>"; };
 		C4FCB7631926182E00CEA139 /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
 		C4FCB7641926182E00CEA139 /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		C4FCB766192624AA00CEA139 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		C4FCB767192624AA00CEA139 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 				C4F41D0A18F686A600538160 /* jbrAppDelegate.h */,
 				C4F41D0B18F686A600538160 /* jbrAppDelegate.m */,
 				C4F41D2E18F6871A00538160 /* mainWindow.storyboard */,
+				C4FCB766192624AA00CEA139 /* MapViewController.h */,
+				C4FCB767192624AA00CEA139 /* MapViewController.m */,
 				C4F41D3018F68EA700538160 /* PictureViewController.h */,
 				C4F41D3118F68EA700538160 /* PictureViewController.m */,
 				C4F41D3318F68F0900538160 /* ReaderView.h */,
@@ -306,6 +311,7 @@
 				C4F7BA6A19115E64008B911C /* FlickRPicture.m in Sources */,
 				C4F41D3518F68F0900538160 /* ReaderView.m in Sources */,
 				C4FCB7651926182E00CEA139 /* CityViewController.m in Sources */,
+				C4FCB768192624AA00CEA139 /* MapViewController.m in Sources */,
 				C4FCB75D1926089100CEA139 /* City.m in Sources */,
 				C4F41D0C18F686A600538160 /* jbrAppDelegate.m in Sources */,
 			);
