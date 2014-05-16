@@ -31,6 +31,7 @@
 		C4F7BA6719113BD5008B911C /* flickr_api_keys in Resources */ = {isa = PBXBuildFile; fileRef = C4F7BA6619113BD5008B911C /* flickr_api_keys */; };
 		C4F7BA6A19115E64008B911C /* FlickRPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7BA6919115E64008B911C /* FlickRPicture.m */; };
 		C4FCB75D1926089100CEA139 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB75C1926089100CEA139 /* City.m */; };
+		C4FCB7601926099100CEA139 /* City+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB75F1926099100CEA139 /* City+CRUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		C4F7BA6919115E64008B911C /* FlickRPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickRPicture.m; sourceTree = "<group>"; };
 		C4FCB75B1926089100CEA139 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
 		C4FCB75C1926089100CEA139 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		C4FCB75E1926099100CEA139 /* City+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "City+CRUD.h"; sourceTree = "<group>"; };
+		C4FCB75F1926099100CEA139 /* City+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "City+CRUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 				C4F41D0D18F686A600538160 /* welcomeBro.xcdatamodeld */,
 				C4FCB75B1926089100CEA139 /* City.h */,
 				C4FCB75C1926089100CEA139 /* City.m */,
+				C4FCB75E1926099100CEA139 /* City+CRUD.h */,
+				C4FCB75F1926099100CEA139 /* City+CRUD.m */,
 				C4F41D0218F686A600538160 /* Supporting Files */,
 				C4F7BA6619113BD5008B911C /* flickr_api_keys */,
 			);
@@ -289,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FCB7601926099100CEA139 /* City+CRUD.m in Sources */,
 				C4F41D0F18F686A600538160 /* welcomeBro.xcdatamodeld in Sources */,
 				C4F41D3218F68EA700538160 /* PictureViewController.m in Sources */,
 				C4F41D0818F686A600538160 /* main.m in Sources */,
