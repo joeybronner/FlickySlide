@@ -12,7 +12,7 @@
 @implementation City (CRUD)
 
 
-
+/* ajout d'une nouvelle ville */
 + (instancetype)newCity
 {
     City * city = [NSEntityDescription insertNewObjectForEntityForName:@"City" inManagedObjectContext:[self context]];
@@ -20,12 +20,14 @@
     return city;
 }
 
+/* suppression d'une ville */
 - (void)destroy
 {
     [[City context] deleteObject:self]; // on supprime la ville
     [[City appDelegate] saveContext]; // on sauvegarde la base de données
 }
 
+/* affichage de toutes les villes */
 + (NSArray*) allCities
 {
     NSFetchRequest * request = [[NSFetchRequest alloc] initWithEntityName:@"City"];
@@ -33,6 +35,7 @@
 }
 
 
+/* tools */
 + (jbrAppDelegate*) appDelegate;
 {
     return [[UIApplication sharedApplication] delegate];
