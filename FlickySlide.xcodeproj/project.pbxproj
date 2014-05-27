@@ -28,6 +28,7 @@
 		C4F41D4118F697E100538160 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4F41D4018F697E100538160 /* 0.jpg */; };
 		C4F41D4318F697EC00538160 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4F41D4218F697EC00538160 /* 1.jpg */; };
 		C4F41D4718F697FF00538160 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4F41D4618F697FF00538160 /* 2.jpg */; };
+		C4F46BD119349A1B0033D79A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F46BD019349A1B0033D79A /* MapKit.framework */; };
 		C4F7BA6719113BD5008B911C /* flickr_api_keys in Resources */ = {isa = PBXBuildFile; fileRef = C4F7BA6619113BD5008B911C /* flickr_api_keys */; };
 		C4F7BA6A19115E64008B911C /* FlickRPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F7BA6919115E64008B911C /* FlickRPicture.m */; };
 		C4FCB75D1926089100CEA139 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FCB75C1926089100CEA139 /* City.m */; };
@@ -73,6 +74,7 @@
 		C4F41D4018F697E100538160 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		C4F41D4218F697EC00538160 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		C4F41D4618F697FF00538160 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		C4F46BD019349A1B0033D79A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C4F7BA6619113BD5008B911C /* flickr_api_keys */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flickr_api_keys; sourceTree = "<group>"; };
 		C4F7BA6819115E64008B911C /* FlickRPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickRPicture.h; sourceTree = "<group>"; };
 		C4F7BA6919115E64008B911C /* FlickRPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickRPicture.m; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F46BD119349A1B0033D79A /* MapKit.framework in Frameworks */,
 				C4F41CFC18F686A600538160 /* CoreGraphics.framework in Frameworks */,
 				C4F41D0018F686A600538160 /* CoreData.framework in Frameworks */,
 				C4F41CFE18F686A600538160 /* UIKit.framework in Frameworks */,
@@ -137,6 +140,7 @@
 		C4F41CF818F686A600538160 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4F46BD019349A1B0033D79A /* MapKit.framework */,
 				C4F41CF918F686A600538160 /* Foundation.framework */,
 				C4F41CFB18F686A600538160 /* CoreGraphics.framework */,
 				C4F41CFD18F686A600538160 /* UIKit.framework */,

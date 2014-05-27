@@ -11,7 +11,7 @@
 @import MapKit;
 
 @interface MapViewController ()
-@property (strong, nonatomic) IBOutlet UIView *mapView;
+@property (weak, nonatomic) IBOutlet MKMapView *MapView;
 
 @end
 
@@ -33,8 +33,13 @@
 }
 
 
-- (IBAction)addLocation:(id)sender {
+- (IBAction)addLocation:(id)sender
+{
     City * newCity = [City newCity];
+    newCity.latitude = @(self.MapView.centerCoordinate.latitude);
+    newCity.longitude = @(self.MapView.centerCoordinate.longitude);
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

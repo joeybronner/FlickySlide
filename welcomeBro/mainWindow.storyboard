@@ -52,7 +52,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="dFm-Pf-ko0" kind="push" id="Mde-cr-ehx"/>
+                                    <segue destination="dFm-Pf-ko0" kind="push" identifier="toPictureViewController" id="Mde-cr-ehx"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -93,27 +93,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KT-Y4-bKW">
-                                <rect key="frame" x="107" y="470" width="107" height="30"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JDJ-6f-Kor">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asR-Rh-X6S">
+                                <rect key="frame" x="20" y="498" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="Ajouter un lieu">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addLocation:" destination="7fO-Xm-8A8" eventType="touchUpInside" id="lID-JG-0Gu"/>
+                                    <action selector="addLocation:" destination="7fO-Xm-8A8" eventType="touchUpInside" id="yv7-61-7Ke"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tv1-fU-wsq" firstAttribute="top" secondItem="8KT-Y4-bKW" secondAttribute="bottom" constant="40" id="D4v-PG-b14"/>
-                            <constraint firstItem="8KT-Y4-bKW" firstAttribute="top" secondItem="IQQ-7q-0eL" secondAttribute="bottom" constant="465" id="eAF-iF-aTm"/>
+                            <constraint firstItem="tv1-fU-wsq" firstAttribute="top" secondItem="asR-Rh-X6S" secondAttribute="bottom" constant="40" id="5Lu-ET-e8c"/>
+                            <constraint firstItem="tv1-fU-wsq" firstAttribute="top" secondItem="JDJ-6f-Kor" secondAttribute="bottom" id="83Z-VZ-mC0"/>
+                            <constraint firstItem="asR-Rh-X6S" firstAttribute="leading" secondItem="zxk-AG-F8W" secondAttribute="leading" constant="20" symbolic="YES" id="htG-Im-jL4"/>
+                            <constraint firstAttribute="trailing" secondItem="JDJ-6f-Kor" secondAttribute="trailing" id="kN1-5k-FAu"/>
+                            <constraint firstAttribute="trailing" secondItem="asR-Rh-X6S" secondAttribute="trailing" constant="20" symbolic="YES" id="meO-tE-Jx3"/>
+                            <constraint firstItem="JDJ-6f-Kor" firstAttribute="leading" secondItem="zxk-AG-F8W" secondAttribute="leading" id="qto-es-vwO"/>
+                            <constraint firstItem="JDJ-6f-Kor" firstAttribute="top" secondItem="IQQ-7q-0eL" secondAttribute="bottom" id="uiI-1s-wZM"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="zxk-AG-F8W" id="Sdd-vs-YRr"/>
+                        <outlet property="MapView" destination="JDJ-6f-Kor" id="9Xr-pR-ASG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOW-hM-Qry" userLabel="First Responder" sceneMemberID="firstResponder"/>

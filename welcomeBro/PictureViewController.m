@@ -32,10 +32,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    FlickRLocation location;
-    location.latitude = 48.8787181;
-    location.longitude = 7.47510120000004;
-    location.radius = 5;
+    //FlickRLocation location;
+    //location.latitude = 48.8787181;
+    //location.longitude = 7.47510120000004;
+    //location.radius = 5;
     
     UIActivityIndicatorView * indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     
@@ -44,7 +44,7 @@
     [self.view addSubview:indicator];
     [indicator startAnimating];
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{self.pictures = [FlickRPicture picturesAroundLocation:location];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{self.pictures = [FlickRPicture picturesAroundLocation:self.location];
         dispatch_async(dispatch_get_main_queue(), ^{self.readerView.delegate = self; [self.readerView displayPageAtIndex:0 animated:NO];
             [indicator stopAnimating];
         });
