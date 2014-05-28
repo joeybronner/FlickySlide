@@ -86,6 +86,28 @@
     return imageView;
 }
 
+-(void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    for (UIActivityIndicatorView * spinner in self.view.subviews)
+    {
+        spinner.center = self.view.center;
+    }
+}
+
+
+/* ne fonctionne pas...
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+    for (UIActivityIndicatorView * spinner in self.view.subviews)
+    {
+        spinner.center = self.view.center;
+    }
+}
+ */
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

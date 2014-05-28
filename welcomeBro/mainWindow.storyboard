@@ -91,7 +91,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JDJ-6f-Kor">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JDJ-6f-Kor">
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </mapView>
@@ -109,7 +109,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tv1-fU-wsq" firstAttribute="top" secondItem="asR-Rh-X6S" secondAttribute="bottom" constant="40" id="5Lu-ET-e8c"/>
-                            <constraint firstItem="tv1-fU-wsq" firstAttribute="top" secondItem="JDJ-6f-Kor" secondAttribute="bottom" id="83Z-VZ-mC0"/>
                             <constraint firstItem="asR-Rh-X6S" firstAttribute="leading" secondItem="zxk-AG-F8W" secondAttribute="leading" constant="20" symbolic="YES" id="htG-Im-jL4"/>
                             <constraint firstAttribute="trailing" secondItem="JDJ-6f-Kor" secondAttribute="trailing" id="kN1-5k-FAu"/>
                             <constraint firstAttribute="trailing" secondItem="asR-Rh-X6S" secondAttribute="trailing" constant="20" symbolic="YES" id="meO-tE-Jx3"/>

@@ -16,4 +16,6 @@
 
 - (void) destroy;
 
++ (void) saveChanges;
+
 @end

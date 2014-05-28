@@ -39,6 +39,8 @@
     newCity.latitude = @(self.MapView.centerCoordinate.latitude);
     newCity.longitude = @(self.MapView.centerCoordinate.longitude);
     
+    [City saveChanges];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }

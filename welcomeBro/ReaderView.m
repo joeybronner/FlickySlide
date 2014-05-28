@@ -28,6 +28,9 @@
 
 -(void) layoutSubviews
 {
+    [super layoutSubviews];
+    [self.subviews.lastObject setFrame:self.bounds];
+    
     // si aucun geste n'est enregistré
     if (!self.gestureRecognizers.count)
     {

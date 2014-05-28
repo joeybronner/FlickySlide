@@ -34,6 +34,12 @@
     return [[self context] executeFetchRequest:request error:nil];
 }
 
+/* sauvegarde des changements sur une ville */
++(void) saveChanges
+{
+    [[self appDelegate] saveContext];
+}
+
 
 /* tools */
 + (jbrAppDelegate*) appDelegate;
